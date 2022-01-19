@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aplikasiaritmatika">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.noActionBar">
+        <activity android:name=".Hasil_Kuis_PG"></activity>
+        <activity android:name="CDeretGeometri.Halaman_LebihDari" />
+        <activity android:name="CDeretGeometri.JawabanDeret_Geometri" />
+        <activity android:name="CDeretGeometri.LatihanSoal_DeretGeometri" />
+        <activity android:name="CDeretGeometri.ContohSoal_DeretGeometri" />
+        <activity android:name="CBarisanGeometri.ContohSoal_BarisanGeometri" />
+        <activity android:name="CBarisanGeometri.LatihanSoal_BarisanGeometri" />
+        <activity android:name="CBarisanGeometri.JawabanBarisan_Geometri" />
+        <activity android:name="CeQuiz.Hasil_Kuis" />
+        <activity android:name=".Tentang_Aplikasi" />
+        <activity android:name="CDeretGeometri.Deret_Geometri" />
+        <activity android:name="CBarisanGeometri.Barisan_Geometri" />
+        <activity android:name="CeQuiz.Soal_Essay" />
+        <activity android:name="CeQuiz.Pilihan_Ganda" />
+        <activity android:name="BDeretAritmatika.JawabanPenjelasan_Deret" />
+        <activity android:name="BDeretAritmatika.Latihansoal_Deret" />
+        <activity android:name="BDeretAritmatika.Contohsoal_Deret" />
+        <activity android:name="BarisanAritmatika.Latiihansoal_Baris" />
+        <activity android:name="BarisanAritmatika.Contohsoal_Baris" />
+        <activity android:name="CeQuiz.Quiz_Aritmatika" />
+        <activity android:name="BDeretAritmatika.Deret_Aritmatika" />
+        <activity android:name="BarisanAritmatika.Barisan_Aritmatika" />
+        <activity
+            android:name="BarisanAritmatika.Jawaban_Baris_Aritmatika"
+            android:parentActivityName="BarisanAritmatika.Latiihansoal_Baris" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AplikasiAritmatika</string>
+    <string name="teks_panjang">Java adalah bahasa pemrograman yang dapat dijalankan di berbagai
+      komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih
+      bergabung di Sun Microsystems saat ini merupakan bagian dari Oracle dan dirilis tahun 1995.
+      Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan sintaksis
+      model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal.
+      Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode)
+      dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM). Java merupakan bahasa pemrograman
+      yang bersifat umum/non-spesifik (general purpose), dan secara khusus didisain untuk memanfaatkan
+      dependensi implementasi seminimal mungkin. Karena fungsionalitasnya yang memungkinkan aplikasi
+      java mampu berjalan di beberapa platform sistem operasi yang berbeda, java dikenal pula dengan
+      slogannya, "Tulis sekali, jalankan di mana pun". Saat ini java merupakan bahasa pemrograman
+      yang paling populer digunakan, dan secara luas dimanfaatkan dalam pengembangan berbagai jenis
+      perangkat lunak aplikasi ataupun aplikasi</string>
+    <string name="soal1">1. Hitunglah besarnya U32 dari barisan 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, …</string>
+    <string name="soal2">2. Berdasarkan barisan contoh soal nomor 1, hitunglah deret untuk 25 angka pertama.</string>
+    <string name="soal3">3. Tentukanlah suku tengah dari barisan 9, 11, 13, 15, 17, … 69.</string>
+    <string name="soal4">4. Berdasarkan barisan pada contoh soal (3), carilah besar n.</string>
+    <string name="soal5">5. Tentukanlah suku ke 11 dari barisan bilangan 1, 2, 4, 8, 16 ….</string>
+    <string name="versi">Aplikasi Versi 1.0</string>
+    <string name="barisan_aritmetika_adalah">Barisan aritmatika adalah barisan bilangan yang mempunyai beda atau selisih yang tetap antara dua suku barisan yang berurutan.</string>
+    <string name="deret_aritmaika_adalah">Deret aritmaika adalah barisan atau deret bilangan yang memiliki pola teratur dengan selisih suku-sukunya selalu tatap. Suku disimbolkan dengan huruf “U”, khusus untuk U1 disimbokan dengan huruf “a”, selisih atau beda tiap suku disimbolkan dengan huru “b”.</string>
+    <string name="barisan_geometri_adalah">Barisan geometri adalah baris yang nilai setiap sukunya didapatkan dari suku sebelumnya melalui perkalian dengan suatu bilangan. Perbandingan atau rasio antara nilai suku-suku yang berdekatan selalu sama yaitu r. Nilai suku pertama dilambangkan dengan a.</string>
+    <string name="jika_r_bernilai_lebih">Jika r bernilai lebih besar dari 1, barisan geometri tersebut merupakan barisan geometri naik. Adapun jika r lebih kecil dari 1, barisan geometri tersebut merupakan barisan geometri turun.</string>
+</resources>
