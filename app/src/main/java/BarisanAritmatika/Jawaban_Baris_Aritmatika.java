@@ -10,13 +10,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.aplikasiaritmatika.MainActivity;
 import com.example.aplikasiaritmatika.R;
 
 public class Jawaban_Baris_Aritmatika extends AppCompatActivity {
 
 
     TextView tv_nilaia,tv_nilaia2, tv_nilaia3,  tv_nilaibeda, tv_nilaibanyak, tv_nilaiUN, tv_nilaikurung,
-            tv_nilaikali, tv_nilaitambah, tv_nilaib2 ,tv_nilaiTotal;
+            tv_nilaikali, tv_nilaitambah, tv_nilaib2 ,tv_nilaiTotal, BTN_HOME1;
 
 
 
@@ -28,6 +29,7 @@ public class Jawaban_Baris_Aritmatika extends AppCompatActivity {
         tv_nilaia=findViewById(R.id.mTxt_Nilaiaa);
         tv_nilaia2=findViewById(R.id.mTxt_Nilaiaa2);
         tv_nilaia3=findViewById(R.id.mTxt_Nilaiaa3);
+        BTN_HOME1=findViewById(R.id.button6);
 
         tv_nilaikurung=findViewById(R.id.tv_hasilkurung);
         tv_nilaikali=findViewById(R.id.tv_hasilkali);
@@ -64,6 +66,12 @@ public class Jawaban_Baris_Aritmatika extends AppCompatActivity {
         tv_nilaitambah.setText(String.valueOf(hasiltambah));
         tv_nilaiTotal.setText(String.valueOf(hasiltambah));
 
+        BTN_HOME1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Jawaban_Baris_Aritmatika.this, MainActivity.class));
+            }
+        });
 
     }
 

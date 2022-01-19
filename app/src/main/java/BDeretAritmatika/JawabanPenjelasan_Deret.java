@@ -5,14 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.aplikasiaritmatika.MainActivity;
 import com.example.aplikasiaritmatika.R;
 
 public class JawabanPenjelasan_Deret extends AppCompatActivity {
 
     TextView Tv_sukupertamatxt, Tv_barisanpertamatxt, Tv_bedaderet, Tv_banyaksuku, tv_hasilbagi2, tv_hasilkali2
             , tv_hasilkurang1, tv_turunanb, tv_turunanhasilbagi, tv_hasilsemuakurung, tv_hasilseluruh, tv_cetak;
+    Button BTN_HOME2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,7 @@ public class JawabanPenjelasan_Deret extends AppCompatActivity {
         Tv_bedaderet=findViewById(R.id.pace);
         Tv_banyaksuku=findViewById(R.id.tv_banyaksuku);
         tv_cetak=findViewById(R.id.tv_cetaktotal);
+        BTN_HOME2=findViewById(R.id.button7);
 
         tv_hasilbagi2=findViewById(R.id.hasilbagi_bg);
         tv_hasilkali2=findViewById(R.id.hasilkali2);
@@ -60,6 +64,13 @@ public class JawabanPenjelasan_Deret extends AppCompatActivity {
         tv_hasilseluruh.setText(String.valueOf(total));
         tv_cetak.setText(String.valueOf(total));
 
+
+        BTN_HOME2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(JawabanPenjelasan_Deret.this, MainActivity.class));
+            }
+        });
 
 
 

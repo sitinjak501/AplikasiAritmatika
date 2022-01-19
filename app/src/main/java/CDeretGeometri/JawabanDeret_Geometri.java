@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.aplikasiaritmatika.MainActivity;
 import com.example.aplikasiaritmatika.R;
 
 public class JawabanDeret_Geometri extends AppCompatActivity {
 
-    TextView JW_nilaiA, JW_nilaiN, JW_nilaiR, cetakSemua, TurunanPengurangan_tv, CetakBagiBawah, TV_NilaiAkhirDeretGeo;
+    TextView JW_nilaiA, JW_nilaiN, JW_nilaiR, cetakSemua, TurunanPengurangan_tv, CetakBagiBawah,
+            TV_NilaiAkhirDeretGeo, BTN_HOME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class JawabanDeret_Geometri extends AppCompatActivity {
         CetakBagiBawah=findViewById(R.id.tv_bagibawahderet);
         TurunanPengurangan_tv= findViewById(R.id.tv_turunanPengurangan);
         TV_NilaiAkhirDeretGeo=findViewById(R.id.tv_NilaiAkhirDeretGeo);
+        BTN_HOME=findViewById(R.id.button5);
 
         Intent terimaderet = getIntent();
         int Nilai_AderetA=terimaderet.getExtras().getInt("AderetA");
@@ -59,6 +62,13 @@ public class JawabanDeret_Geometri extends AppCompatActivity {
             CetakBagiBawah.setText(String.valueOf( " 1 - " + r));
 
         }
+
+        BTN_HOME.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(JawabanDeret_Geometri.this, MainActivity.class));
+            }
+        });
 
 
 

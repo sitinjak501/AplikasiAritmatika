@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.aplikasiaritmatika.MainActivity;
 import com.example.aplikasiaritmatika.R;
 
 public class JawabanBarisan_Geometri extends AppCompatActivity {
 
     TextView A_BarisGeoA, N_BarisGeo, R_BarisGeo, Pangkat_et, turunan_NilaiA, turunan_nilaiA2, nilaiNdikurang
-    ,hasil_pangkat, Total_nilaiUn, JadiHasilUn;
+    ,hasil_pangkat, Total_nilaiUn, JadiHasilUn, BTN_Home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class JawabanBarisan_Geometri extends AppCompatActivity {
         A_BarisGeoA=findViewById(R.id.et_barisGeoA);
         N_BarisGeo=findViewById(R.id.et_barisGN);
         R_BarisGeo=findViewById(R.id.et_barisGR);
+        BTN_Home=findViewById(R.id.button4);
 
         Pangkat_et=findViewById(R.id.et_pangkat);
         turunan_NilaiA=findViewById(R.id.AturunanbarGeoA);
@@ -54,10 +56,19 @@ public class JawabanBarisan_Geometri extends AppCompatActivity {
         Pangkat_et.setText(String.valueOf(R_BarisGeo_R));
         JadiHasilUn.setText(String.valueOf(perkalian));
 
+        BTN_Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(JawabanBarisan_Geometri.this, MainActivity.class));
+            }
+        });
+
 
     }
 
     public void kembali11(View view) {
         onBackPressed();
     }
+
+
 }
